@@ -3,7 +3,8 @@
 p_needed <- c("tidyverse", "janitor", # modern data wrangling
               "rvest", # scraping suite
               "devtools", # developer tools; access to GitHub-hosted packages
-              "ggmap", "osmdata" # fun with maps
+              "ggmap", "osmdata", # fun with maps
+              "ipapi", "pageviews", "WikipediR"
 )
 packages <- rownames(installed.packages())
 p_to_install <- p_needed[!(p_needed %in% packages)]
